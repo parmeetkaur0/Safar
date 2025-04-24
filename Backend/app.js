@@ -14,7 +14,7 @@ connectToDb();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://safar-2kyr.onrender.com"
+"https://safar-puce.vercel.app"   
 ];
 
 app.use(cors());
