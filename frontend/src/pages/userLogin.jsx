@@ -44,6 +44,7 @@ const UserLogin = () => {
 
     } catch (error) {
       // alert(`Login failed. ${error.response.data.message`);
+      console.log(error.response)
       alert("login failed");
     } finally {
       setLoading(false);
