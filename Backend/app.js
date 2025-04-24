@@ -13,6 +13,17 @@ const rideRoute = require('./routes/ride.routes');
 connectToDb();
 
 app.use(cors());
+app.use(cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true // if you’re using cookies or auth headers
+  }));
+app.options('*', cors()); // for preflight requests
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());

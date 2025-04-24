@@ -17,7 +17,7 @@ import Payment from './pages/Payment'
 
 const App = () => {
   return (
-    <div className="w-[375px] mx-auto bg-white shadow-lg min-h-screen border">
+    <div className="">
       <Routes>
         <Route path="/" element={<Start />} />
         <Route path="/captainRegister" element={<CaptainRegister />} />

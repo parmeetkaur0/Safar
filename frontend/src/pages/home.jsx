@@ -272,7 +272,7 @@ const Home = () => {
 
     return (
         <div className='h-screen w-screen relative overflow-hidden'>
-            <div className=" fixed top-0  z-10 p-4 left-[80%] w-full">
+            <div className=" fixed top-0 z-10 p-4 right-[5%]">
                 <Link
                     to="/login"
                     className=" bg-white h-12 w-12 rounded-full flex items-center justify-center"
