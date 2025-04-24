@@ -12,6 +12,11 @@ const rideRoute = require('./routes/ride.routes');
 
 connectToDb();
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://safar-2kyr.onrender.com"
+];
+
 app.use(cors());
 app.use(cors({
     origin: function (origin, callback) {

@@ -24,6 +24,10 @@ const UserLogin = () => {
     try {
       const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/users/login`, userData);
 
+      if (response.status === 400) {
+        alert('Invalid email or password');
+        return;
+      }
      
       if (response.status === 409) {
         alert('User already logged in');
