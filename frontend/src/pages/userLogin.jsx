@@ -43,7 +43,8 @@ const UserLogin = () => {
       }
 
     } catch (error) {
-      alert(`Login failed. ${error.response.data.message}`);
+      // alert(`Login failed. ${error.response.data.message`);
+      alert("login failed");
     } finally {
       setLoading(false);
       setEmail('');
